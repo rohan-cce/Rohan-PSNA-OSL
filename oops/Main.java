@@ -53,7 +53,27 @@ public class Main {
         System.out.println("Order price: " + order3.getOrderPrice());
 
 
+
+
+
+//        Notification  notification = new Notification();
+
+        SMSNotification smsNotification = new SMSNotification();
+
+
+
+
+        EmailNotification emailNotification = new EmailNotification();
+
+        smsNotification.sendNotification("Hello World");
+        emailNotification.sendNotification("Hello World");
+
+
+
+        smsNotification.sendSmsNotification("rohan", 1234);
+        emailNotification.sendEmailNotification("rohan",,1234);
     }
+
 }
 
 
